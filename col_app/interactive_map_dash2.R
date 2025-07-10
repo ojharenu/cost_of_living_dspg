@@ -8,7 +8,6 @@ library(ggplot2)
 library(plotly)
 library(readxl)
 library(viridis)
-
 options(tigris_use_cache = TRUE)
 
 # --- Core App Setup and Data Loading ---
@@ -206,9 +205,15 @@ ui <- fluidPage(
         line-height: 1.4;
       }
       .controls-info-box p { margin-bottom: 0; }
+       body {
+    background-color: rgba(229, 117, 31, 0.1);*/transparent orange color
+  }
       
     "))
+    
   ),
+ 
+
   
   div(class = "dashboard-wrapper",
       div(class = "custom-header", h1("Virginia Cost of Living")),
